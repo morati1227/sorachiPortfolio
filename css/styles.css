@@ -118,13 +118,19 @@ p {
 .navbar-dark .navbar-nav .nav-link.active,.navbar-dark .navbar-nav .nav-link:hover {
   color: white !important;
 }
-
+/* home  */
+.offset-home {
+  margin-top: 3.5rem;
+}
+.carousel {
+  position: relative;
+}
 /* caption  */
 .caption {
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 35%; 
+  top: 50%; 
   z-index: 1;
   color: white;
 }
@@ -144,11 +150,14 @@ caption {
   }
 
   @media (max-width: 992px) {
+    .offset-home {
+      position: relative;
+    }
     .caption {
       width: 100%;
       max-width: 100%;
       position: absolute;
-      top: 15%; 
+      top: 24%; 
       z-index: 1;
       color: white;
     }
@@ -168,7 +177,19 @@ caption {
       }
     
   }
+  @media(max-width: 500px) {
+    .offset-home {
+      position: relative;
+    }
+    .caption {
+      position: absolute;
+      top: 18%;
 
+    }
+    .caption h1 {
+      font-size: 3rem;
+    }
+  }
 .page-section {
   padding: 6rem 0;
 }
